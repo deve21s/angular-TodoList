@@ -1,5 +1,7 @@
-<form (ngSubmit)="onSubmit()">
-    <input type="text" name="title" [(ngModel)]="title"
-    placeholder="Add Todo...." >
-    <input type="submit" value="submit">
-</form>
+<div class="box is-centered">
+    <form class="columns" (ngSubmit)="onSubmit()">
+        <input class="column is-four-fifths input" type="text" name="title" [(ngModel)]="title"
+        placeholder="Add Todo...." >
+        <input class="column button is-success input" type="submit" value="submit">
+    </form>
+</div>

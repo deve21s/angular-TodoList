@@ -3,7 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { AboutComponent } from './components/pages/about/about.component';
 import {TodosComponent} from './components/todos/todos.component'
 const routes: Routes = [
-  {path: '', component: TodosComponent},
+  {path: 'home', component: TodosComponent, pathMatch: 'full'},
+  {path: '', redirectTo : '/home', pathMatch : "full"},
   {path: 'about', component : AboutComponent}
 ];
 
